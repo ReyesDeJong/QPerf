@@ -15,8 +15,8 @@ from scipy.spatial import ConvexHull
 from scipy.ndimage.morphology import binary_fill_holes
 import scipy.misc
 
-from skimage import io, transform
-from skimage import measure
+# from skimage import io, transform
+# from skimage import measure
 
 """
 cmr_ml_utils_geometry.py

@@ -10,7 +10,7 @@ import os
 import sys
 from tensorboardX import SummaryWriter
 from .performance import *
-from utils import *
+from deep_learning.analysis.utils.utils import *
 from time import time
 from IPython.display import clear_output, display
 from .post_process import *
