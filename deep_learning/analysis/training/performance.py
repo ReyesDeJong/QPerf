@@ -13,8 +13,12 @@ for the implementation of jaccard index
 
 """
 
-def cuda(x):
-    return x.cuda(async=True) if torch.cuda.is_available() else x
+def cuda(x: torch.Tensor):
+    if torch.cuda.is_available():
+        return x.to("cuda")
+    else:
+        return x
+
 
 def general_dice(y_true, y_pred):
     result = []
